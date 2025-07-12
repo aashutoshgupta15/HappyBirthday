@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Moonlight 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="star-canvas"></canvas>
+
+  <div class="container">
+    <h1>🌙 Happy Birthday My Moonlight 🎂</h1>
+
+    <div class="timer" id="timer"></div>
+
+    <div class="typewriter">
+      <h2 id="message"></h2>
+    </div>
+
+    <div class="gallery">
+      <img src="images/H5.jpg" class="gallery-img active" />
+      <img src="images/H4.jpg" class="gallery-img" />
+      <img src="images/H3.jpg" class="gallery-img" />
+      <img src="images/H1.jpg" class="gallery-img" />
+      <img src="images/H2.jpg" class="gallery-img" />
+      <button onclick="prevImg()">⏪</button>
+      <button onclick="nextImg()">⏩</button>
+    </div>
+
+    <audio id="bg-music" autoplay loop>
+      <source src="HBD.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="hidden-gift">
+      <button id="reveal-btn" class="enabled">✨ Reveal Your Cosmic Surprise 🎁</button>
+      <p id="gift-link" style="display: none;">
+        <a href="https://drive.google.com/file/d/1Dew6Utm98n1Wunuy5PZAVsJRG8Cab0Is/view?usp=sharing" target="_blank">Click here to open your cosmic gift 💝</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
